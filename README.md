@@ -12,14 +12,11 @@
 
 ## 🛠 Tech Stack
 
-| | |
-| :-- | :-- |
-| **Language** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="32" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="32" /> |
-| **Backend** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="32" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" height="32" /> &nbsp; `MyBatis` `JSP` `WebSocket` |
-| **Database** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" height="32" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" height="32" /> |
-| **AI** | <img src="https://cdn.simpleicons.org/googlegemini" height="28" /> &nbsp; `Gemini API` `Spring AI` `KOMORAN` `Tesseract OCR` |
-| **Frontend** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="32" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="32" /> |
-| **Tools** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="32" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="32" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="32" /> |
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=java,spring,maven,html,css,js,git,github,idea&perline=9" />
+
+</div>
 
 <br>
 
