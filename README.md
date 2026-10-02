@@ -69,7 +69,6 @@
 
 <div align="center">
 
-<img height="150" src="https://github-readme-stats.vercel.app/api?username=yooshuu&show_icons=true&hide_border=true&hide_title=true" />
-<img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yooshuu&layout=compact&hide_border=true" />
+<img src="https://streak-stats.demolab.com?user=yooshuu&hide_border=true" />
 
 </div>
