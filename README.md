@@ -17,16 +17,6 @@
 
 <br>
 
-## 🛠 Tech Stack
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=java,spring,maven,html,css,js,git,github,idea&perline=9" />
-
-</div>
-
-<br>
-
 ## 📂 Projects
 
 <table>
@@ -69,6 +59,16 @@
 </td>
 </tr>
 </table>
+
+<br>
+
+## 🛠 Tech Stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=java,spring,maven,html,css,js,git,github,idea&perline=9" />
+
+</div>
 
 <br>
 

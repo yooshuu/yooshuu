@@ -19,7 +19,10 @@ PALETTES = {
     "light": {"levels": ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"]},
     "dark": {"levels": ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]},
 }
-COAT = {"body": "#ede3d3", "line": "#2e2925", "shade": "#c9baa3"}
+COATS = {
+    "light": {"body": "#ede3d3", "line": "#2e2925", "detail": "#2e2925", "shade": "#c9baa3"},
+    "dark": {"body": "#ede3d3", "line": "#a89a85", "detail": "#6b5f50", "shade": "#c9baa3"},
+}
 
 
 def fetch_cells(user):
@@ -80,8 +83,8 @@ def legs(paths, color, width):
 
 
 def goat(p):
-    line, fill = p["line"], p["body"]
-    torso_line = (legs(LEGS_FAR + LEGS_NEAR, line, 2.3) + shapes([TAIL, BODY], line, line, 2))
+    line, fill, edge = p["detail"], p["body"], p["line"]
+    torso_line = (legs(LEGS_FAR + LEGS_NEAR, edge, 2.3) + shapes([TAIL, BODY], edge, edge, 2))
     torso_fill = (legs(LEGS_FAR + LEGS_NEAR, fill, 0.9) + shapes([TAIL, BODY], fill, "none", 0)
                   + f'<path d="M-8 -9.4 C-3 -8.4 2 -8.4 6.6 -9.4 C2 -9.8 -3 -9.8 -8 -9.4 Z" fill="{p["shade"]}"/>'
                   + f'<g stroke="{line}" stroke-width="0.45" fill="none" stroke-linecap="round" opacity=".75">'
@@ -90,7 +93,7 @@ def goat(p):
                   + "".join(f'<rect x="{x}" y="-1.2" width="1.8" height="1.2" rx="0.3" fill="{line}"/>'
                             for x in (-8.5, -10.5, 5.3, 2.9)))
     head_line = (f'<path d="M12.2 -22.6 C11.6 -26.5 8.5 -28.4 5.5 -27.6" stroke="{line}" stroke-width="1.5" fill="none" '
-                 f'stroke-linecap="round" opacity=".8"/>' + shapes([NECK, EAR, HEAD], line, line, 2))
+                 f'stroke-linecap="round" opacity=".8"/>' + shapes([NECK, EAR, HEAD], edge, edge, 2))
     head_fill = (shapes([NECK, EAR, HEAD], fill, "none", 0)
                  + f'<path d="M7 -15.6 q1.4 -1.6 2.6 -3.4" stroke="{line}" stroke-width="0.45" fill="none" opacity=".7"/>'
                  + f'<path d="M14 -16.9 l-0.3 3.2 l1.5 -3" fill="{line}" stroke="{line}" stroke-width="0.4" stroke-linejoin="round"/>'
@@ -177,7 +180,7 @@ def build(cells, theme):
     css.append("@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-1px)}}")
     css.append(".bob{animation:bob .4s ease-in-out infinite}")
 
-    torso_line, torso_fill, head_line, head_fill = goat(COAT)
+    torso_line, torso_fill, head_line, head_fill = goat(COATS[theme])
 
     def turning(inner):
         return (f'<g transform="translate({PIVOT[0]},{PIVOT[1]})"><g class="head">'
