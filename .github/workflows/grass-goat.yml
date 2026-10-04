@@ -2,7 +2,7 @@ name: grass goat
 
 on:
   schedule:
-    - cron: "0 15 * * *"
+    - cron: "30 14 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -22,6 +22,14 @@ jobs:
         with:
           python-version: "3.12"
       - run: python grass_pets.py ${{ github.repository_owner }} dist
+      - name: streak cards
+        run: |
+          base="https://streak-stats.demolab.com?user=${{ github.repository_owner }}&hide_border=true&background=00000000&ring=4F8EF7&fire=4F8EF7&currStreakLabel=4F8EF7"
+          dark="&currStreakNum=E6EDF3&sideNums=E6EDF3&sideLabels=E6EDF3&dates=8B949E&stroke=30363D"
+          prev="https://raw.githubusercontent.com/${{ github.repository }}/output"
+          get() { curl -fsSL --retry 2 "$1" -o "dist/$2" || curl -fsSL "$prev/$2" -o "dist/$2" || true; }
+          get "$base" streak-light.svg
+          get "$base$dark" streak-dark.svg
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output

@@ -76,6 +76,9 @@
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=yooshuu&hide_border=true" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yooshuu/yooshuu/output/streak-dark.svg" />
+  <img alt="GitHub Streak" src="https://raw.githubusercontent.com/yooshuu/yooshuu/output/streak-light.svg" />
+</picture>
 
 </div>
