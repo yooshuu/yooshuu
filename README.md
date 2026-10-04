@@ -6,6 +6,13 @@
 
 백엔드 개발을 공부하고 있습니다.
 
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yooshuu/yooshuu/output/goat-dark.svg" />
+  <img alt="잔디를 들이받는 염소" src="https://raw.githubusercontent.com/yooshuu/yooshuu/output/goat-light.svg" />
+</picture>
+
 </div>
 
 <br>
