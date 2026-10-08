@@ -11,16 +11,16 @@ OUT = Path(sys.argv[2]) if len(sys.argv) > 2 else Path("dist")
 ART = Path(__file__).with_name("cat.txt")
 
 FONT, LINE, CHAR = 14, 20, 8.4
-ART_FONT, ART_LINE, ART_CHAR = 12, 16, 7.2
+ART_FONT, ART_LINE, ART_CHAR = 9, 12, 5.4
 WIDTH = 46
 
 THEMES = {
     "dark": {"bg": "#161b22", "text": "#c9d1d9", "key": "#ffa657", "value": "#a5d6ff", "dots": "#616e7f",
              "art": {"@": "#e6edf3", "#": "#c9d1d9", "+": "#8b949e", ":": "#6e7681", ".": "#484f58",
-                     "*": "#e3b46a", "~": "#79b8ff"}},
+                     "*": "#e3b46a", "~": "#79b8ff", "o": "#f778ba"}},
     "light": {"bg": "#f6f8fa", "text": "#24292f", "key": "#953800", "value": "#0a3069", "dots": "#c2cfde",
               "art": {"@": "#1f2328", "#": "#24292f", "+": "#57606a", ":": "#afb8c1", ".": "#d0d7de",
-                      "*": "#c48a2c", "~": "#4a90d9"}},
+                      "*": "#c48a2c", "~": "#4a90d9", "o": "#e5859b"}},
 }
 
 
