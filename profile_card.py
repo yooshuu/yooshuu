@@ -18,10 +18,10 @@ ART_FONT, ART_LINE, ART_CHAR = 6.5, 7.8, 3.9
 WIDTH = 46
 
 THEMES = {
-    "dark": {"bg": "#0d1117", "art": "#c9d1d9", "title": "#e6edf3", "key": "#c9d1d9",
-             "dots": "#3d444d", "value": "#e6edf3", "rule": "#3d444d", "bright_dense": True},
-    "light": {"bg": "#ffffff", "art": "#1f2328", "title": "#1f2328", "key": "#1f2328",
-              "dots": "#d1d9e0", "value": "#1f2328", "rule": "#d1d9e0", "bright_dense": False},
+    "dark": {"bg": "#161b22", "art": "#c9d1d9", "user": "#ff7b72", "title": "#e6edf3", "key": "#ffa657",
+             "dots": "#3d444d", "value": "#a5d6ff", "rule": "#3d444d", "bright_dense": True},
+    "light": {"bg": "#f6f8fa", "art": "#1f2328", "user": "#cf222e", "title": "#1f2328", "key": "#bc4c00",
+              "dots": "#d1d9e0", "value": "#0a3069", "rule": "#d1d9e0", "bright_dense": False},
 }
 
 
@@ -101,7 +101,7 @@ def render(items, t):
         if item[0] == "title":
             bold = "@" in item[1]
             rule = "-" * max(2, WIDTH - len(item[1]) - 1)
-            out.append(span(item[1] + " ", t["title"], bold) + span(rule, t["rule"]))
+            out.append(span(item[1] + " ", t["user"] if bold else t["title"], bold) + span(rule, t["rule"]))
         elif item[0] == "row":
             out.append(row(item[1], item[2], WIDTH, t))
         else:
