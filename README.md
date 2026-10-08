@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yooshuu/yooshuu/output/card-dark.svg" />
-  <img alt="yooshuu · Backend Developer" src="https://raw.githubusercontent.com/yooshuu/yooshuu/output/card-light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yooshuu/yooshuu/output/card-dark.svg?v=charmeleon" />
+  <img alt="yooshuu · Backend Developer" src="https://raw.githubusercontent.com/yooshuu/yooshuu/output/card-light.svg?v=charmeleon" />
 </picture>
 
 <br><br>
