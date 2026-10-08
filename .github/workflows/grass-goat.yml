@@ -9,7 +9,7 @@ on:
     paths:
       - grass_pets.py
       - profile_card.py
-      - cat.txt
+      - charmeleon.art
       - .github/workflows/grass-goat.yml
 
 permissions:
