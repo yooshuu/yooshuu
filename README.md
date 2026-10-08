@@ -1,12 +1,11 @@
 <div align="center">
 
-# yooshuu
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yooshuu/yooshuu/output/card-dark.svg" />
+  <img alt="yooshuu · Backend Developer" src="https://raw.githubusercontent.com/yooshuu/yooshuu/output/card-light.svg" />
+</picture>
 
-**Backend Developer** · Java & Spring Boot
-
-백엔드 개발을 공부하고 있습니다.
-
-<br>
+<br><br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yooshuu/yooshuu/output/goat-dark.svg" />
