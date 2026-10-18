@@ -2,7 +2,7 @@ name: grass goat
 
 on:
   schedule:
-    - cron: "30 14 * * *"
+    - cron: "0 21 * * *"  # 매일 06:00 KST
   workflow_dispatch:
   push:
     branches: [main]
